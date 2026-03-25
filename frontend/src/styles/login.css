@@ -1,0 +1,336 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  background-attachment: fixed;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.login-card {
+  background: white;
+  border-radius: 16px;
+  padding: 40px 35px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  width: 100%;
+}
+
+/* Logo - Compact Design */
+.logo-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.bank-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3182ce, #2b6cb0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-icon {
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+
+.bank-name {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a202c;
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
+/* Login Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.form-input {
+  width: 100%;
+  padding: 16px 20px;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #2d3748;
+  background: #f8fafc;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.form-input::placeholder {
+  color: #64748b;
+  font-weight: 500;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #3182ce;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(49, 130, 206, 0.1);
+}
+
+/* Form options (Remember me & Forgot password) */
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox-input {
+  display: none;
+}
+
+.checkbox-custom {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #3182ce;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.check-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.checkbox-label {
+  font-size: 14px;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.forgot-password {
+  background: none;
+  border: none;
+  color: #3182ce;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Login button */
+.login-button {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, #3182ce, #2b6cb0);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 10px;
+  font-family: inherit;
+}
+
+.login-button:hover {
+  background: linear-gradient(135deg, #2b6cb0, #3182ce);
+  transform: translateY(-1px);
+}
+
+/* Sign up link */
+.login-footer {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 14px;
+  color: #64748b;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.footer-text {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.signup-link {
+  background: none;
+  border: none;
+  color: #3182ce;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0 4px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .login-page {
+    padding: 15px;
+  }
+  
+  .login-container {
+    max-width: 100%;
+  }
+  
+  .login-card {
+    padding: 30px 25px;
+    border-radius: 14px;
+  }
+  
+  .logo-circle {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .logo-icon {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .bank-name {
+    font-size: 24px;
+  }
+  
+  .form-input {
+    padding: 14px 18px;
+    font-size: 15px;
+  }
+  
+  .login-button {
+    padding: 15px;
+    font-size: 15px;
+  }
+  
+  .login-form {
+    gap: 18px;
+  }
+  
+  .form-options {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .forgot-password {
+    align-self: flex-start;
+  }
+}
+
+/* For very small screens */
+@media (max-height: 700px) {
+  .login-page {
+    align-items: flex-start;
+    padding-top: 30px;
+    min-height: 100vh;
+  }
+  
+  .login-card {
+    margin: 20px auto;
+  }
+  
+  .logo-container {
+    margin-bottom: 25px;
+  }
+}
+
+/* For extremely small screens */
+@media (max-height: 600px) {
+  .login-card {
+    padding: 25px 20px;
+  }
+  
+  .logo-container {
+    margin-bottom: 20px;
+  }
+  
+  .logo-circle {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .logo-icon {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .bank-name {
+    font-size: 22px;
+  }
+  
+  .login-form {
+    gap: 15px;
+  }
+}
+
+/* Prevent form zoom on mobile iOS */
+@supports (-webkit-touch-callout: none) {
+  .form-input {
+    font-size: 16px;
+  }
+}
+
+/* Firefox specific fix */
+@-moz-document url-prefix() {
+  .login-card {
+    background: white;
+  }
+}
+
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
